@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu">
+   <children>
+      <Label layoutX="177.0" layoutY="31.0" text="Agenda Telefônica - JAVA" textFill="#2d98da">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="-1.0" layoutY="346.0" prefHeight="40.0" prefWidth="709.0" style="-fx-background-color: transparent;" translateY="19.0">
+        <items>
+            <Separator orientation="VERTICAL" prefHeight="82.0" prefWidth="95.0" visible="false" />
+          <Button fx:id="botaoADD" mnemonicParsing="false" onAction="#adicionarContato" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ícones/sinal-de-adicao.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="82.0" prefWidth="26.0" visible="false" />
+            <Button fx:id="botaoPES" mnemonicParsing="false" onAction="#pesquisarContato" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ícones/pesquisa-de-lupa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="82.0" prefWidth="26.0" visible="false" />
+            <Button fx:id="botaoALT" mnemonicParsing="false" onAction="#alterarContato" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ícones/mudar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="82.0" prefWidth="26.0" visible="false" />
+            <Button fx:id="botaoDEL" mnemonicParsing="false" onAction="#deletarContato" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ícones/excluir.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="82.0" prefWidth="26.0" visible="false" />
+            <Button fx:id="botaoLIS" mnemonicParsing="false" onAction="#listarContatos" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ícones/lista-de-reproducao.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+        </items>
+      </ToolBar>
+      <ToolBar layoutY="438.0" prefHeight="40.0" prefWidth="709.0" style="-fx-background-color: transparent;">
+        <items>
+            <Separator orientation="VERTICAL" prefHeight="30.0" prefWidth="87.0" visible="false" />
+            <Label text="ADICIONAR" textFill="#2d98da">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="30.0" prefWidth="16.0" visible="false" />
+            <Label text="PESQUISAR" textFill="#2d98da">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="30.0" prefWidth="24.0" visible="false" />
+            <Label text="ALTERAR" textFill="#2d98da">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="30.0" prefWidth="34.0" visible="false" />
+            <Label text="DELETAR" textFill="#2d98da">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="30.0" prefWidth="42.0" visible="false" />
+            <Label text="LISTAR" textFill="#2d98da">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+        </items>
+      </ToolBar>
+      <Label layoutX="577.0" layoutY="6.0" text="Powered by Potyguara Filho">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="180.0" fitWidth="188.0" layoutX="264.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ícones/agenda.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="Sair" layoutX="654.0" layoutY="487.0" mnemonicParsing="false" onAction="#sairPrograma" prefHeight="19.0" prefWidth="52.0" style="-fx-background-color: RED; -fx-background-radius: 15px;" text="SAIR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

@@ -1,7 +1,2 @@
-## Introdução
-
-Seja bem vindo!
-Se você curtiu a extensão, não esqueça de deixar uma avaliação!
-
-Siga o canal no YouTube:
-- Academia dos Devs
+AgendaTelefonica_JAVA
+Consiste numa agenda telefônica com conexão a um db local, com as funcionalidades de um CRUD
